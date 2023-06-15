@@ -1,3 +1,5 @@
-const { ipcRenderer } = require('electron')
+const { contextBridge, ipcRenderer } = require('electron')
 
-window.block = (block) => ipcRenderer.invoke('block', block)
+contextBridge.exposeInMainWorld(
+  'block', (block) => ipcRenderer.invoke('block', block)
+)
