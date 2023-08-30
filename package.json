@@ -20,6 +20,6 @@
     "electron": "^25.1.0"
   },
   "dependencies": {
-    "hypercore": "^10.15.1"
+    "hypercore": "^10.21.4"
   }
 }
